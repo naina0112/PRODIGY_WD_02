@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Stopwatch</title> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div class="stopwatch">
-    <div class="timerDisplay">00 : 00 : 00</div>
-</div>
-
-<div class="buttons">
-    <button id="stopBtn" class="btn" 
-    style="--clr: red; ">stop</button>
-    <button id="startBtn" class="btn"
-    style="--clr:green">start</button>
-   
-    <button id="resetBtn" class="btn"
-    style="--clr:blue">reset</button>
-</div>
-
-<script src="script.js"></script>
+    <nav>
+        <ul>
+            <li>Myownstopwatch.com</li><br>
+        </ul>
+    </nav>
+    <main>
+        <h1>StopWatch</h1>
+    <div class="container">
+        <div class="wrapper">
+            <p>
+                <span class="mins">00</span>:<span class="seconds">00</span>:<span class="tens">00</span>
+            </p> <br>
+            <button class="btn-start">Start</button>
+            <button class="btn-stop">Stop</button>
+            <button class="btn-reset">Reset</button>
+              <button class="btn-lapping">Lapping</button>
+        </div>
+         <h2>Lap Times</h2>
+        <ul id="lapList"></ul>
+    </div>
+</main>
+    <script src="script.js"></script>
 </body>
-    </html>
-
+</html>
